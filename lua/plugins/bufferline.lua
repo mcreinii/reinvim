@@ -30,7 +30,7 @@ return {
 
 		local map = require("utils.keymap").set
 
-		map("n", "<leader>bb", ":BufferlinePick", "Select a buffer")
-		map("n", "<leader>bc", ":BufferlinePickClose", "Select a buffer to close")
+		map("n", "<leader>bb", ":BufferlinePick<cr>", "Select a buffer")
+		map("n", "<leader>bc", ":BufferlinePickClose<cr>", "Select a buffer to close")
 	end,
 }
