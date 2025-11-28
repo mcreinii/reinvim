@@ -8,9 +8,10 @@ local keymap = require("utils.keymap")
 
 -- Buffers
 keymap.set("n", "<leader>w", ":w<cr>", "Write Buffer")
-keymap.set("n", "<leader>c", ":q<cr>", "Close current buffer")
+keymap.set("n", "<leader>c", ":bd<cr>", "Close current buffer")
 
 -- Quiting
+keymap.set("n", "<leader>q", ":qa<cr>", "Quit Window")
 keymap.set("n", "<leader>Q", ":qa<cr>", "Quit ReiNvim")
 
 -- LSP
