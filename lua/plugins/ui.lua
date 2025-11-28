@@ -165,7 +165,13 @@ return {
 		markdown = {
 			hover = {
 				["|(%S-)|"] = vim.cmd.help, -- vim help links
-				["%[.-%]%((%S-)%)"] = require("noice.util").open, -- markdown links
+				["%[.-%]%((%S-)%)"] = (function()
+					local _, isavailable = pcall(require, "noice.util")
+					if not isavailable then
+						return nil
+					end
+					return isavailable.open
+				end)(),
 			},
 			highlights = {
 				["|%S-|"] = "@text.reference",
