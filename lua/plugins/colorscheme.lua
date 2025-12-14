@@ -3,7 +3,7 @@ return {
 	lazy = false,
 	priority = 1000,
 	opts = {
-		transparent = true, -- Boolean: Sets the background to transparent
+		transparent = false, -- Boolean: Sets the background to transparent
 		italics = {
 			comments = true, -- Boolean: Italicizes comments
 			keywords = true, -- Boolean: Italicizes keywords

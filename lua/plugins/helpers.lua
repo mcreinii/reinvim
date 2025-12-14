@@ -29,6 +29,7 @@ return {
 				{ "<leader>f", group = "Finder" },
 				{ "<leader>l", group = "Language Tools" },
 				{ "<leader>b", group = "Buffer" },
+				{ "<leader>s", group = "Session" },
 			})
 		end,
 	},
